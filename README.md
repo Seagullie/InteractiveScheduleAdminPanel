@@ -25,7 +25,7 @@ npm run dev
 
 ## Скріншоти
 
-Скріншоти
+Розміщені у `docs/screenshots`: [Скріншоти](docs/screenshots)
 
 ## Посилання
 

@@ -1,5 +1,5 @@
 {
-  "name": "test-admin",
+  "name": "interative-schedule-admin-panel",
   "private": true,
   "scripts": {
     "dev": "vite",
@@ -10,11 +10,15 @@
     "format": "prettier --write ./src"
   },
   "dependencies": {
+    "dotenv": "^16.3.1",
+    "jwt-decode": "^4.0.0",
     "ra-data-json-server": "^4.16.0",
+    "ra-data-simple-rest": "^4.16.1",
     "ra-language-ukrainian": "^2.5.0",
     "react": "^18.2.0",
     "react-admin": "^4.16.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "schedule-server-api-client": "github:Seagullie/schedule-server-api-client"
   },
   "devDependencies": {
     "@types/node": "^18.16.1",

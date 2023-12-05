@@ -1,32 +1,46 @@
-# test-admin
+# InteractiveScheduleAdminPanel
 
-## Installation
+Адміністративна панель для редагування студентських розкладів. Цей проект тісно пов'язаний зі / залежить від [API сервера зі розкладами](https://github.com/bind-w-exit/InteractiveScheduleUad).
 
-Install the application dependencies by running:
+Використано react-admin, фреймворк для створення адмін. панелей. Загалом, завдяки цьому зручному фреймворку, проект не зайняв багато часу.
 
-```sh
-npm install
+## Запуск проекту
+
+Для запуску проекту необхідно заповнити файл `src/Secrets.ts `відповідно до `src/Secrets.example.ts`
+Потім виконайте
+
 ```
-
-## Development
-
-Start the application in development mode by running:
-
-```sh
+npm run install
 npm run dev
 ```
 
-## Production
+Крім того, сервер API повинен бути запущений із заповненою БД. Напевно, це найбільша складність для тих, хто просто хоче поглянути на проект :c
 
-Build the application in production mode by running:
+## Структура
 
-```sh
-npm run build
-```
+Структура проекту є типовою. Ось лише деякі речі в директорії `src`:
 
-## DataProvider
+- `src/Resources`. Кожен ресурс відповідає окремому ресурсу API і містить react елементи списоку, редагування, створення та відображення для маніпуляції та перегляду даних.
+- `src/Providers`. У цій папці знаходяться файли, які додають до аплікації можливості автентифікації, i18n та комунікації через API.
 
-The included data provider use [ra-data-json-server](https://github.com/marmelab/react-admin/tree/master/packages/ra-data-json-server). It fits REST APIs powered by [JSON Server](https://github.com/typicode/json-server), such as [JSONPlaceholder](https://jsonplaceholder.typicode.com/).
+## Скріншоти
 
-You'll find an `.env` file at the project root that includes a `VITE_JSON_SERVER_URL` variable. Set it to the URL of your backend. By default, we set it to targets [JSONPlaceholder](https://jsonplaceholder.typicode.com/).
+Скріншоти
 
+## Посилання
+
+React Admin Framework. Документація
+
+[https://marmelab.com/react-admin/documentation.html](https://marmelab.com/react-admin/documentation.html)
+
+API сервер зі розкладами
+
+[https://github.com/bind-w-exit/InteractiveScheduleUad](https://github.com/bind-w-exit/InteractiveScheduleUad)
+
+Клієнт для API сервера зі розкладами
+
+[https://github.com/Seagullie/schedule-server-api-client](https://github.com/Seagullie/schedule-server-api-client)
+
+Переглядач розкладів (мобільний застосунок та веб-сайт)
+
+[https://github.com/Seagullie/InteractiveScheduleUAD](https://github.com/Seagullie/InteractiveScheduleUAD)
